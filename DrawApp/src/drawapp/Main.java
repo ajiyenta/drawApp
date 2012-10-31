@@ -18,8 +18,6 @@ public class Main
       public void run()
       {
         ImagePanel imagePanel = main.getImagePanel();
-//        String input = "DL 0 0 500 300\nDR 100 150 50 50";
-//        Parser parser = new Parser(new StringReader(input),imagePanel);
         Reader reader = new InputStreamReader(System.in);
         Parser parser = new Parser(reader,imagePanel,main);
         parser.parse();
